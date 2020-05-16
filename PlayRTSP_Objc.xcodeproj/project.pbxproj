@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		77A3710DCEBB8996D5ED1042 /* Pods_PlayRTSP_Objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */; };
 		C0861950246F9B260018CFFC /* XHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086194F246F9B260018CFFC /* XHero.swift */; };
+		C08619E2246FCFAA0018CFFC /* RTSPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619E1246FCFAA0018CFFC /* RTSPItem.m */; };
+		C08619E5246FD6D80018CFFC /* RTSPItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619E4246FD6D80018CFFC /* RTSPItemModel.m */; };
+		C08619E8246FD75B0018CFFC /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619E7246FD75B0018CFFC /* Path.m */; };
+		C08619EB246FD9C00018CFFC /* RealmProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619EA246FD9C00018CFFC /* RealmProvider.m */; };
+		C08619EE246FFDD20018CFFC /* UICollectionView+ApplyChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619ED246FFDD20018CFFC /* UICollectionView+ApplyChanges.m */; };
 		C0BBC16C246EF47700C89B5A /* UIViewController+SegueHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */; };
 		C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD080B246E307D0044DABD /* AppDelegate.m */; };
 		C0BD0812246E307D0044DABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0811246E307D0044DABD /* ViewController.m */; };
@@ -36,6 +41,16 @@
 		2848F3DC8EF990B2CA56F4BC /* Pods-PlayRTSP_Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRTSP_Objc.debug.xcconfig"; path = "Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc.debug.xcconfig"; sourceTree = "<group>"; };
 		78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayRTSP_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C086194F246F9B260018CFFC /* XHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHero.swift; sourceTree = "<group>"; };
+		C08619E0246FCFAA0018CFFC /* RTSPItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPItem.h; sourceTree = "<group>"; };
+		C08619E1246FCFAA0018CFFC /* RTSPItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPItem.m; sourceTree = "<group>"; };
+		C08619E3246FD6D80018CFFC /* RTSPItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPItemModel.h; sourceTree = "<group>"; };
+		C08619E4246FD6D80018CFFC /* RTSPItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPItemModel.m; sourceTree = "<group>"; };
+		C08619E6246FD75B0018CFFC /* Path.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		C08619E7246FD75B0018CFFC /* Path.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
+		C08619E9246FD9C00018CFFC /* RealmProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmProvider.h; sourceTree = "<group>"; };
+		C08619EA246FD9C00018CFFC /* RealmProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmProvider.m; sourceTree = "<group>"; };
+		C08619EC246FFDD20018CFFC /* UICollectionView+ApplyChanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ApplyChanges.h"; sourceTree = "<group>"; };
+		C08619ED246FFDD20018CFFC /* UICollectionView+ApplyChanges.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ApplyChanges.m"; sourceTree = "<group>"; };
 		C0BBC16A246EF47700C89B5A /* UIViewController+SegueHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueHandler.h"; sourceTree = "<group>"; };
 		C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueHandler.m"; sourceTree = "<group>"; };
 		C0BD0807246E307D0044DABD /* PlayRTSP_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayRTSP_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +122,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C08619DE246FCD5C0018CFFC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C08619E0246FCFAA0018CFFC /* RTSPItem.h */,
+				C08619E1246FCFAA0018CFFC /* RTSPItem.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C08619DF246FCD660018CFFC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C08619E3246FD6D80018CFFC /* RTSPItemModel.h */,
+				C08619E4246FD6D80018CFFC /* RTSPItemModel.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		C0BD07FE246E307D0044DABD = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +181,8 @@
 				C0BD0852246E76320044DABD /* XDefer.h */,
 				C0BD0853246E76320044DABD /* XDefer.m */,
 				C086194F246F9B260018CFFC /* XHero.swift */,
+				C08619E6246FD75B0018CFFC /* Path.h */,
+				C08619E7246FD75B0018CFFC /* Path.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,6 +194,8 @@
 				C0BD0856246E83720044DABD /* CALayer+Shadow.m */,
 				C0BD083B246E43BB0044DABD /* NSArray+HOF.h */,
 				C0BD083C246E43BB0044DABD /* NSArray+HOF.m */,
+				C08619EC246FFDD20018CFFC /* UICollectionView+ApplyChanges.h */,
+				C08619ED246FFDD20018CFFC /* UICollectionView+ApplyChanges.m */,
 				C0BD083E246E44CD0044DABD /* UIImage+SFSymbols.h */,
 				C0BD083F246E44CD0044DABD /* UIImage+SFSymbols.m */,
 				C0BD0841246E460D0044DABD /* UIView+Shake.h */,
@@ -204,6 +241,8 @@
 		C0BD0828246E30CB0044DABD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C08619E9246FD9C00018CFFC /* RealmProvider.h */,
+				C08619EA246FD9C00018CFFC /* RealmProvider.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -211,6 +250,8 @@
 		C0BD0829246E30D10044DABD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C08619DE246FCD5C0018CFFC /* Entities */,
+				C08619DF246FCD660018CFFC /* DataModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BD084B246E5A700044DABD /* UIView+NibLoadable.m in Sources */,
+				C08619E2246FCFAA0018CFFC /* RTSPItem.m in Sources */,
 				C0BD083D246E43BB0044DABD /* NSArray+HOF.m in Sources */,
 				C0BD0812246E307D0044DABD /* ViewController.m in Sources */,
 				C0BD084E246E61890044DABD /* RTSPViewCell.m in Sources */,
@@ -371,11 +413,15 @@
 				C0861950246F9B260018CFFC /* XHero.swift in Sources */,
 				C0BD0843246E460D0044DABD /* UIView+Shake.m in Sources */,
 				C0BD0834246E36350044DABD /* UIViewController+Theme.m in Sources */,
+				C08619E8246FD75B0018CFFC /* Path.m in Sources */,
 				C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */,
 				C0BD0837246E41C60044DABD /* RTSPListViewController.m in Sources */,
+				C08619EB246FD9C00018CFFC /* RealmProvider.m in Sources */,
+				C08619E5246FD6D80018CFFC /* RTSPItemModel.m in Sources */,
 				C0BD0840246E44CD0044DABD /* UIImage+SFSymbols.m in Sources */,
 				C0BD0857246E83720044DABD /* CALayer+Shadow.m in Sources */,
 				C0BD081D246E307E0044DABD /* main.m in Sources */,
+				C08619EE246FFDD20018CFFC /* UICollectionView+ApplyChanges.m in Sources */,
 				C0BD082D246E31640044DABD /* UIViewController+ContentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

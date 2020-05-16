@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RTSPItem.h"
+
+typedef void (^PlayHandler)(NSString*, NSString*);
+typedef void (^DeletionHandler)(NSString*);
 
 @interface RTSPView : UIView
 
@@ -16,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *deleteButton;
+
+@property (nonatomic) RTSPItem *object;
+@property (nonatomic) PlayHandler playHandler;
+@property (nonatomic) DeletionHandler deletionHandler;
 
 - (void)setShakingEnabled:(BOOL)enabled;
 - (void)clear;

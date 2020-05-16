@@ -10,8 +10,10 @@
 #import "XButton.h"
 #import "XDefer.h"
 #import "RTSPViewCell.h"
+#import "RTSPItemModel.h"
 #import "RTSPViewController.h"
 #import "UIViewController+SegueHandler.h"
+#import "UICollectionView+ApplyChanges.h"
 
 #define RTSP_DEFAULT_NAME @"Cam_"
 #define RTSP_DEFAULT_URL @"rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
@@ -88,9 +90,13 @@ static const CGFloat kMinimumInteritemSpacing = 8;
 }
 
 - (void)addObservers {
+    RTSPItemModel.didUpdate = ^(RLMCollectionChange *changes) {
+        [self.collectionView applyWithChanges:changes];
+    };
 }
 
 - (void)removeObservers {
+    RTSPItemModel.didUpdate = nil;
 }
 
 #pragma mark - Override
@@ -108,6 +114,7 @@ static const CGFloat kMinimumInteritemSpacing = 8;
 }
 
 - (void)onTrashButtonTapped {
+    if (RTSPItemModel.items.count == 0) { return; }
     self.navigationItem.rightBarButtonItem = self.doneButton;
     [self setEditing:true];
 }
@@ -130,9 +137,18 @@ static const CGFloat kMinimumInteritemSpacing = 8;
     
     if (CGRectContainsPoint(cell.rtspView.contentView.frame, p2)) {
         
+        /* close all other media */
+        RTSPItem *item = RTSPItemModel.items[indexPath.item];
+        //        IJKMediaService.shared.setSingleMedia(with: item.uuid)
+        
+        /* play selected media */
+        //        if IJKMediaService.shared.hasMedia(with: item.uuid) == false {
+        //            IJKMediaService.shared.setMedia(with: item.uuid, url: item.url)
+        //        }
+        
         Tuple cellInfo = ^(NSString **cellHeroId, NSString **cellUUID) {
             *cellHeroId = cell.heroID;
-            *cellUUID = cell.heroID; // TODO:
+            *cellUUID = item.uuid;
         };
         
         [self performSegueWithSegueIdentifier:Detail sender:cellInfo];
@@ -154,7 +170,7 @@ static const CGFloat kMinimumInteritemSpacing = 8;
     // add action
     UIAlertAction *addAction = [UIAlertAction actionWithTitle:@"Add" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if ((nameField.text.length != 0) && (urlField.text.length != 0)) {
-            // TODO:
+            [RTSPItemModel addWithName:nameField.text url:urlField.text];
         }
     }];
     [addAction setEnabled:false];
@@ -187,9 +203,18 @@ static const CGFloat kMinimumInteritemSpacing = 8;
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    RTSPItem *item = RTSPItemModel.items[indexPath.item];
+    
     void (^setupCell)(RTSPViewCell*) = ^(RTSPViewCell *rtspCell) {
         [rtspCell setShaking:self.isEditing];
         rtspCell.heroID = [NSString stringWithFormat:@"rtsp_%li", (long)indexPath.item];
+        rtspCell.rtspView.object = item;
+        rtspCell.rtspView.playHandler = ^(NSString *uuid, NSString *url) {
+            [self playWithUUID:uuid url:url];
+        };
+        rtspCell.rtspView.deletionHandler = ^(NSString *uuid) {
+            [self deleteWithUUID:uuid];
+        };
     };
     
     if ([cell isKindOfClass:[RTSPViewCell class]]) {
@@ -197,13 +222,27 @@ static const CGFloat kMinimumInteritemSpacing = 8;
     }
 }
 
+- (void)playWithUUID:(NSString*)uuid url:(NSString*)url {
+    if (self.isEditing) { return; }
+    // TODO:
+    [self.collectionView reloadData];
+}
+
+- (void)deleteWithUUID:(NSString*)uuid {
+    // TODO:
+    [RTSPItemModel deleteWithUUID:uuid];
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSInteger count = 1;
+    NSInteger count = RTSPItemModel.items.count;
     id defer;
     defer = [XDefer block:^{
         [self.addRTSPButton isVisible:(count == 0)];
+        if (count == 0) {
+            [self onDoneButtonTapped];
+        }
     }];
     return count;
 }

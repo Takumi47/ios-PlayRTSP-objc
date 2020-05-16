@@ -15,6 +15,16 @@
 
 #pragma mark - Lifecycle
 
+- (void)setObject:(RTSPItem *)object {
+    _object = object;
+    if (!object) { return; }
+    
+    self.nameLabel.text = object.name;
+    self.urlLabel.text = object.url;
+    
+    // TODO:
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self commonSetup];
@@ -48,9 +58,13 @@
 #pragma mark - Selector
 
 - (IBAction)onPlayButtonTapped:(id)sender {
+    if (!self.object) { return; }
+    self.playHandler(self.object.uuid, self.object.url);
 }
 
 - (IBAction)onDeleteButtonTapped:(id)sender {
+    if (!self.object) { return; }
+    self.deletionHandler(self.object.uuid);
 }
 
 #pragma mark - Methods
@@ -71,6 +85,7 @@
 }
 
 - (void)clear {
+    self.object = nil;
     for (UIView *subView in self.contentView.subviews) {
         [subView removeFromSuperview];
     }
