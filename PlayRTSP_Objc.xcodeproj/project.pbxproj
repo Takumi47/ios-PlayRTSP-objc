@@ -14,6 +14,20 @@
 		C08619E8246FD75B0018CFFC /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619E7246FD75B0018CFFC /* Path.m */; };
 		C08619EB246FD9C00018CFFC /* RealmProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619EA246FD9C00018CFFC /* RealmProvider.m */; };
 		C08619EE246FFDD20018CFFC /* UICollectionView+ApplyChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = C08619ED246FFDD20018CFFC /* UICollectionView+ApplyChanges.m */; };
+		C08619F02470113F0018CFFC /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619EF2470113E0018CFFC /* IJKMediaFramework.framework */; };
+		C08619F12470113F0018CFFC /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C08619EF2470113E0018CFFC /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C08619F6247011690018CFFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619F5247011690018CFFC /* VideoToolbox.framework */; };
+		C08619F8247011710018CFFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619F7247011710018CFFC /* QuartzCore.framework */; };
+		C08619FA247011780018CFFC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619F9247011780018CFFC /* OpenGLES.framework */; };
+		C08619FC247011800018CFFC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619FB247011800018CFFC /* MobileCoreServices.framework */; };
+		C08619FE247011AC0018CFFC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619FD247011AC0018CFFC /* MediaPlayer.framework */; };
+		C0861A00247011B40018CFFC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619FF247011B40018CFFC /* CoreVideo.framework */; };
+		C0861A02247011BF0018CFFC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0861A01247011BF0018CFFC /* CoreMedia.framework */; };
+		C0861A04247011C90018CFFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0861A03247011C90018CFFC /* CoreGraphics.framework */; };
+		C0861A06247011D10018CFFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0861A05247011D10018CFFC /* AVFoundation.framework */; };
+		C0861A08247011D80018CFFC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0861A07247011D80018CFFC /* AudioToolbox.framework */; };
+		C0861A0B247012430018CFFC /* IJKMediaService.m in Sources */ = {isa = PBXBuildFile; fileRef = C0861A0A247012430018CFFC /* IJKMediaService.m */; };
+		C0861A0E247013DE0018CFFC /* IJKMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C0861A0D247013DE0018CFFC /* IJKMediaItem.m */; };
 		C0BBC16C246EF47700C89B5A /* UIViewController+SegueHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */; };
 		C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD080B246E307D0044DABD /* AppDelegate.m */; };
 		C0BD0812246E307D0044DABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0811246E307D0044DABD /* ViewController.m */; };
@@ -37,6 +51,20 @@
 		C0BD0857246E83720044DABD /* CALayer+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0856246E83720044DABD /* CALayer+Shadow.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C08619F22470113F0018CFFC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C08619F12470113F0018CFFC /* IJKMediaFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2848F3DC8EF990B2CA56F4BC /* Pods-PlayRTSP_Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRTSP_Objc.debug.xcconfig"; path = "Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc.debug.xcconfig"; sourceTree = "<group>"; };
 		78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayRTSP_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +79,23 @@
 		C08619EA246FD9C00018CFFC /* RealmProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmProvider.m; sourceTree = "<group>"; };
 		C08619EC246FFDD20018CFFC /* UICollectionView+ApplyChanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ApplyChanges.h"; sourceTree = "<group>"; };
 		C08619ED246FFDD20018CFFC /* UICollectionView+ApplyChanges.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ApplyChanges.m"; sourceTree = "<group>"; };
+		C08619EF2470113E0018CFFC /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		C08619F3247011540018CFFC /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		C08619F42470115B0018CFFC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C08619F5247011690018CFFC /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		C08619F7247011710018CFFC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C08619F9247011780018CFFC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C08619FB247011800018CFFC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C08619FD247011AC0018CFFC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C08619FF247011B40018CFFC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C0861A01247011BF0018CFFC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C0861A03247011C90018CFFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0861A05247011D10018CFFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C0861A07247011D80018CFFC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C0861A09247012430018CFFC /* IJKMediaService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKMediaService.h; sourceTree = "<group>"; };
+		C0861A0A247012430018CFFC /* IJKMediaService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKMediaService.m; sourceTree = "<group>"; };
+		C0861A0C247013DE0018CFFC /* IJKMediaItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKMediaItem.h; sourceTree = "<group>"; };
+		C0861A0D247013DE0018CFFC /* IJKMediaItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKMediaItem.m; sourceTree = "<group>"; };
 		C0BBC16A246EF47700C89B5A /* UIViewController+SegueHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueHandler.h"; sourceTree = "<group>"; };
 		C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueHandler.m"; sourceTree = "<group>"; };
 		C0BD0807246E307D0044DABD /* PlayRTSP_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayRTSP_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +143,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08619FA247011780018CFFC /* OpenGLES.framework in Frameworks */,
+				C08619F8247011710018CFFC /* QuartzCore.framework in Frameworks */,
+				C0861A06247011D10018CFFC /* AVFoundation.framework in Frameworks */,
 				77A3710DCEBB8996D5ED1042 /* Pods_PlayRTSP_Objc.framework in Frameworks */,
+				C0861A02247011BF0018CFFC /* CoreMedia.framework in Frameworks */,
+				C08619FE247011AC0018CFFC /* MediaPlayer.framework in Frameworks */,
+				C08619FC247011800018CFFC /* MobileCoreServices.framework in Frameworks */,
+				C08619F02470113F0018CFFC /* IJKMediaFramework.framework in Frameworks */,
+				C08619F6247011690018CFFC /* VideoToolbox.framework in Frameworks */,
+				C0861A04247011C90018CFFC /* CoreGraphics.framework in Frameworks */,
+				C0861A00247011B40018CFFC /* CoreVideo.framework in Frameworks */,
+				C0861A08247011D80018CFFC /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +164,19 @@
 		3CEA8BB261AA244D359AB618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0861A07247011D80018CFFC /* AudioToolbox.framework */,
+				C0861A05247011D10018CFFC /* AVFoundation.framework */,
+				C0861A03247011C90018CFFC /* CoreGraphics.framework */,
+				C0861A01247011BF0018CFFC /* CoreMedia.framework */,
+				C08619FF247011B40018CFFC /* CoreVideo.framework */,
+				C08619FD247011AC0018CFFC /* MediaPlayer.framework */,
+				C08619FB247011800018CFFC /* MobileCoreServices.framework */,
+				C08619F9247011780018CFFC /* OpenGLES.framework */,
+				C08619F7247011710018CFFC /* QuartzCore.framework */,
+				C08619F5247011690018CFFC /* VideoToolbox.framework */,
+				C08619F42470115B0018CFFC /* libz.tbd */,
+				C08619F3247011540018CFFC /* libbz2.tbd */,
+				C08619EF2470113E0018CFFC /* IJKMediaFramework.framework */,
 				78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +196,8 @@
 			children = (
 				C08619E0246FCFAA0018CFFC /* RTSPItem.h */,
 				C08619E1246FCFAA0018CFFC /* RTSPItem.m */,
+				C0861A0C247013DE0018CFFC /* IJKMediaItem.h */,
+				C0861A0D247013DE0018CFFC /* IJKMediaItem.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -243,6 +314,8 @@
 			children = (
 				C08619E9246FD9C00018CFFC /* RealmProvider.h */,
 				C08619EA246FD9C00018CFFC /* RealmProvider.m */,
+				C0861A09247012430018CFFC /* IJKMediaService.h */,
+				C0861A0A247012430018CFFC /* IJKMediaService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -296,6 +369,7 @@
 				C0BD0804246E307D0044DABD /* Frameworks */,
 				C0BD0805246E307D0044DABD /* Resources */,
 				BDFB1997EDD4648F91758E72 /* [CP] Embed Pods Frameworks */,
+				C08619F22470113F0018CFFC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,8 +485,10 @@
 				C0BBC16C246EF47700C89B5A /* UIViewController+SegueHandler.m in Sources */,
 				C0BD0851246E6E6B0044DABD /* XButton.m in Sources */,
 				C0861950246F9B260018CFFC /* XHero.swift in Sources */,
+				C0861A0B247012430018CFFC /* IJKMediaService.m in Sources */,
 				C0BD0843246E460D0044DABD /* UIView+Shake.m in Sources */,
 				C0BD0834246E36350044DABD /* UIViewController+Theme.m in Sources */,
+				C0861A0E247013DE0018CFFC /* IJKMediaItem.m in Sources */,
 				C08619E8246FD75B0018CFFC /* Path.m in Sources */,
 				C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */,
 				C0BD0837246E41C60044DABD /* RTSPListViewController.m in Sources */,
@@ -566,6 +642,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCGTM97MB7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PlayRTSP_Objc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,6 +668,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCGTM97MB7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PlayRTSP_Objc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -7,10 +7,11 @@
 //
 
 #import "RTSPListViewController.h"
-#import "XButton.h"
 #import "XDefer.h"
+#import "XButton.h"
 #import "RTSPViewCell.h"
 #import "RTSPItemModel.h"
+#import "IJKMediaService.h"
 #import "RTSPViewController.h"
 #import "UIViewController+SegueHandler.h"
 #import "UICollectionView+ApplyChanges.h"
@@ -62,6 +63,11 @@ static const CGFloat kMinimumInteritemSpacing = 8;
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self addObservers];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.collectionView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -139,12 +145,12 @@ static const CGFloat kMinimumInteritemSpacing = 8;
         
         /* close all other media */
         RTSPItem *item = RTSPItemModel.items[indexPath.item];
-        //        IJKMediaService.shared.setSingleMedia(with: item.uuid)
+        [IJKMediaService.sharedInstance setSingleMediaWithUUID:item.uuid];
         
         /* play selected media */
-        //        if IJKMediaService.shared.hasMedia(with: item.uuid) == false {
-        //            IJKMediaService.shared.setMedia(with: item.uuid, url: item.url)
-        //        }
+        if (![IJKMediaService.sharedInstance hasMediaWithUUID:item.uuid]) {
+            [IJKMediaService.sharedInstance setMediaWithUUID:item.uuid url:item.url];
+        }
         
         Tuple cellInfo = ^(NSString **cellHeroId, NSString **cellUUID) {
             *cellHeroId = cell.heroID;
@@ -224,12 +230,12 @@ static const CGFloat kMinimumInteritemSpacing = 8;
 
 - (void)playWithUUID:(NSString*)uuid url:(NSString*)url {
     if (self.isEditing) { return; }
-    // TODO:
+    [IJKMediaService.sharedInstance setMediaWithUUID:uuid url:url];
     [self.collectionView reloadData];
 }
 
 - (void)deleteWithUUID:(NSString*)uuid {
-    // TODO:
+    [IJKMediaService.sharedInstance removeMediaWithUUID:uuid];
     [RTSPItemModel deleteWithUUID:uuid];
 }
 

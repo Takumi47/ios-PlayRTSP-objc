@@ -8,6 +8,9 @@
 
 #import "RTSPViewController.h"
 #import "PlayRTSP_Objc-Swift.h"
+#import "XDefer.h"
+#import "IJKMediaItem.h"
+#import "IJKMediaService.h"
 
 @interface RTSPViewController ()
 
@@ -29,6 +32,15 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    IJKMediaItem *media = [IJKMediaService.sharedInstance fetchWithUUID:self.uuid];
+    UIView *playerView = media.player.view;
+    if (self.uuid && media && playerView) {
+        media.player.scalingMode = IJKMPMovieScalingModeAspectFit;
+        playerView.frame = self.view.bounds;
+        self.view.autoresizesSubviews = true;
+        [self.view addSubview:playerView];
+    }
 }
 
 - (void)viewDidLayoutSubviews {
@@ -47,15 +59,16 @@
 - (void)canRotate {}
 
 - (void)pan:(UIPanGestureRecognizer*)gesture {
-    switch (gesture.state) {
-        case UIGestureRecognizerStateBegan:
-            [UIDevice.currentDevice setValue:[NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
-                                      forKey:@"orientation"];
-            [self hero_dismissViewController];
-            break;
-        default:
-            [XHero finishTransition];
-            break;
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        [UIDevice.currentDevice setValue:[NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
+                                  forKey:@"orientation"];
+        [XHero dismiss:self with:^{
+            if (self.uuid) {
+                [IJKMediaService.sharedInstance removeMediaWithUUID:self.uuid];
+            }
+        }];
+    } else {
+        [XHero finishTransition];
     }
 }
 

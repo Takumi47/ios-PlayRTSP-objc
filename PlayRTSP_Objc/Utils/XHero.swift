@@ -13,4 +13,8 @@ import Hero
     public static func finishTransition() {
         Hero.shared.finish()
     }
+    
+    public static func dismiss(_ viewController: UIViewController, with completion: (() -> Void)?) {
+        viewController.hero.dismissViewController(completion: completion)
+    }
 }

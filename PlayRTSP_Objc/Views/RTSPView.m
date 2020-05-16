@@ -10,6 +10,9 @@
 #import "UIView+Shake.h"
 #import "UIView+NibLoadable.h"
 #import "CALayer+Shadow.h"
+#import "IJKMediaItem.h"
+#import "IJKMediaService.h"
+#import "UIImage+SFSymbols.h"
 
 @implementation RTSPView
 
@@ -22,7 +25,24 @@
     self.nameLabel.text = object.name;
     self.urlLabel.text = object.url;
     
-    // TODO:
+    IJKMediaItem *media = [IJKMediaService.sharedInstance fetchWithUUID:object.uuid];
+    if (media) {
+        [self.playButton setImage:[UIImage stop] forState:UIControlStateNormal];
+        
+        UIView *playerView = media.player.view;
+        if (playerView) {
+            media.player.scalingMode = IJKMPMovieScalingModeAspectFill;
+            playerView.frame = self.contentView.bounds;
+            self.contentView.autoresizesSubviews = true;
+            [self.contentView addSubview:playerView];
+        }
+        
+    } else {
+        [self.playButton setImage:[UIImage play] forState:UIControlStateNormal];
+        for (UIView *subView in self.contentView.subviews) {
+            [subView removeFromSuperview];
+        }
+    }
 }
 
 - (void)awakeFromNib {

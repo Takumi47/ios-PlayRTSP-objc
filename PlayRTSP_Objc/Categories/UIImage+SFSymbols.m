@@ -13,10 +13,12 @@
 + (UIImageConfiguration*)defaultConfig {
     return [UIImageSymbolConfiguration configurationWithPointSize:30 weight:UIImageSymbolWeightRegular];
 }
-- (UIImage*)play {
+
++ (UIImage*)play {
     return [UIImage systemImageNamed:@"play.fill" withConfiguration:[UIImage defaultConfig]];
 }
-- (UIImage*)stop {
+
++ (UIImage*)stop {
     return [UIImage systemImageNamed:@"stop.fill" withConfiguration:[UIImage defaultConfig]];
 }
 

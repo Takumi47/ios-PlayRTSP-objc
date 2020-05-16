@@ -10,7 +10,7 @@
 
 @interface UIImage (SFSymbols)
 
-- (UIImage*)play;
-- (UIImage*)stop;
++ (UIImage*)play;
++ (UIImage*)stop;
 
 @end

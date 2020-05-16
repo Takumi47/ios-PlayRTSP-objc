@@ -14,20 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="bId-Cc-Z5o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uKN-jX-bSU">
-                                <rect key="frame" x="124" y="366" width="166" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="uKN-jX-bSU" secondAttribute="height" id="lDI-ec-01L"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="uKN-jX-bSU" firstAttribute="width" secondItem="bId-Cc-Z5o" secondAttribute="width" multiplier="0.4" id="CYi-sn-lop"/>
-                            <constraint firstItem="uKN-jX-bSU" firstAttribute="centerX" secondItem="bId-Cc-Z5o" secondAttribute="centerX" id="EJH-hh-Pt6"/>
-                            <constraint firstItem="uKN-jX-bSU" firstAttribute="centerY" secondItem="bId-Cc-Z5o" secondAttribute="centerY" id="iWD-7N-ooe"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UP1-gL-hzk"/>
                     </view>
                     <navigationItem key="navigationItem" id="Aez-Ze-aFu"/>
@@ -126,7 +113,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.up" catalog="system" width="120" height="128"/>
         <image name="video.slash.fill" catalog="system" width="128" height="104"/>
     </resources>
 </document>
