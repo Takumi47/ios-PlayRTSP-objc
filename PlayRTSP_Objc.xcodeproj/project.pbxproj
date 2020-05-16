@@ -3,25 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77A3710DCEBB8996D5ED1042 /* Pods_PlayRTSP_Objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */; };
+		C0861950246F9B260018CFFC /* XHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086194F246F9B260018CFFC /* XHero.swift */; };
+		C0BBC16C246EF47700C89B5A /* UIViewController+SegueHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */; };
 		C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD080B246E307D0044DABD /* AppDelegate.m */; };
-		C0BD080F246E307D0044DABD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD080E246E307D0044DABD /* SceneDelegate.m */; };
 		C0BD0812246E307D0044DABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0811246E307D0044DABD /* ViewController.m */; };
 		C0BD0815246E307D0044DABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD0813246E307D0044DABD /* Main.storyboard */; };
 		C0BD0817246E307E0044DABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BD0816246E307E0044DABD /* Assets.xcassets */; };
 		C0BD081A246E307E0044DABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD0818246E307E0044DABD /* LaunchScreen.storyboard */; };
 		C0BD081D246E307E0044DABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD081C246E307E0044DABD /* main.m */; };
+		C0BD082D246E31640044DABD /* UIViewController+ContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD082C246E31640044DABD /* UIViewController+ContentVC.m */; };
+		C0BD0834246E36350044DABD /* UIViewController+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0833246E36350044DABD /* UIViewController+Theme.m */; };
+		C0BD0837246E41C60044DABD /* RTSPListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0836246E41C60044DABD /* RTSPListViewController.m */; };
+		C0BD083A246E41E30044DABD /* RTSPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0839246E41E30044DABD /* RTSPViewController.m */; };
+		C0BD083D246E43BB0044DABD /* NSArray+HOF.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD083C246E43BB0044DABD /* NSArray+HOF.m */; };
+		C0BD0840246E44CD0044DABD /* UIImage+SFSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD083F246E44CD0044DABD /* UIImage+SFSymbols.m */; };
+		C0BD0843246E460D0044DABD /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0842246E460D0044DABD /* UIView+Shake.m */; };
+		C0BD0845246E46640044DABD /* RTSPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD0844246E46640044DABD /* RTSPView.xib */; };
+		C0BD0848246E4A5C0044DABD /* RTSPView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0847246E4A5C0044DABD /* RTSPView.m */; };
+		C0BD084B246E5A700044DABD /* UIView+NibLoadable.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD084A246E5A700044DABD /* UIView+NibLoadable.m */; };
+		C0BD084E246E61890044DABD /* RTSPViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD084D246E61890044DABD /* RTSPViewCell.m */; };
+		C0BD0851246E6E6B0044DABD /* XButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0850246E6E6B0044DABD /* XButton.m */; };
+		C0BD0854246E76320044DABD /* XDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0853246E76320044DABD /* XDefer.m */; };
+		C0BD0857246E83720044DABD /* CALayer+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0856246E83720044DABD /* CALayer+Shadow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2848F3DC8EF990B2CA56F4BC /* Pods-PlayRTSP_Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRTSP_Objc.debug.xcconfig"; path = "Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc.debug.xcconfig"; sourceTree = "<group>"; };
+		78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayRTSP_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C086194F246F9B260018CFFC /* XHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHero.swift; sourceTree = "<group>"; };
+		C0BBC16A246EF47700C89B5A /* UIViewController+SegueHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueHandler.h"; sourceTree = "<group>"; };
+		C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueHandler.m"; sourceTree = "<group>"; };
 		C0BD0807246E307D0044DABD /* PlayRTSP_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayRTSP_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD080A246E307D0044DABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0BD080B246E307D0044DABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C0BD080D246E307D0044DABD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C0BD080E246E307D0044DABD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C0BD0810246E307D0044DABD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C0BD0811246E307D0044DABD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C0BD0814246E307D0044DABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +48,34 @@
 		C0BD0819246E307E0044DABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BD081B246E307E0044DABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BD081C246E307E0044DABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0BD082B246E31640044DABD /* UIViewController+ContentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ContentVC.h"; sourceTree = "<group>"; };
+		C0BD082C246E31640044DABD /* UIViewController+ContentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ContentVC.m"; sourceTree = "<group>"; };
+		C0BD0832246E36350044DABD /* UIViewController+Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Theme.h"; sourceTree = "<group>"; };
+		C0BD0833246E36350044DABD /* UIViewController+Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Theme.m"; sourceTree = "<group>"; };
+		C0BD0835246E41C60044DABD /* RTSPListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPListViewController.h; sourceTree = "<group>"; };
+		C0BD0836246E41C60044DABD /* RTSPListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPListViewController.m; sourceTree = "<group>"; };
+		C0BD0838246E41E30044DABD /* RTSPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPViewController.h; sourceTree = "<group>"; };
+		C0BD0839246E41E30044DABD /* RTSPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPViewController.m; sourceTree = "<group>"; };
+		C0BD083B246E43BB0044DABD /* NSArray+HOF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+HOF.h"; sourceTree = "<group>"; };
+		C0BD083C246E43BB0044DABD /* NSArray+HOF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HOF.m"; sourceTree = "<group>"; };
+		C0BD083E246E44CD0044DABD /* UIImage+SFSymbols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFSymbols.h"; sourceTree = "<group>"; };
+		C0BD083F246E44CD0044DABD /* UIImage+SFSymbols.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SFSymbols.m"; sourceTree = "<group>"; };
+		C0BD0841246E460D0044DABD /* UIView+Shake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		C0BD0842246E460D0044DABD /* UIView+Shake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
+		C0BD0844246E46640044DABD /* RTSPView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTSPView.xib; sourceTree = "<group>"; };
+		C0BD0846246E4A5C0044DABD /* RTSPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPView.h; sourceTree = "<group>"; };
+		C0BD0847246E4A5C0044DABD /* RTSPView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPView.m; sourceTree = "<group>"; };
+		C0BD0849246E5A700044DABD /* UIView+NibLoadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoadable.h"; sourceTree = "<group>"; };
+		C0BD084A246E5A700044DABD /* UIView+NibLoadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoadable.m"; sourceTree = "<group>"; };
+		C0BD084C246E61890044DABD /* RTSPViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTSPViewCell.h; sourceTree = "<group>"; };
+		C0BD084D246E61890044DABD /* RTSPViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTSPViewCell.m; sourceTree = "<group>"; };
+		C0BD084F246E6E6B0044DABD /* XButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XButton.h; sourceTree = "<group>"; };
+		C0BD0850246E6E6B0044DABD /* XButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XButton.m; sourceTree = "<group>"; };
+		C0BD0852246E76320044DABD /* XDefer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDefer.h; sourceTree = "<group>"; };
+		C0BD0853246E76320044DABD /* XDefer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDefer.m; sourceTree = "<group>"; };
+		C0BD0855246E83720044DABD /* CALayer+Shadow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Shadow.h"; sourceTree = "<group>"; };
+		C0BD0856246E83720044DABD /* CALayer+Shadow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Shadow.m"; sourceTree = "<group>"; };
+		E5FD4F9D591EC2036E520CF0 /* Pods-PlayRTSP_Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRTSP_Objc.release.xcconfig"; path = "Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +83,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A3710DCEBB8996D5ED1042 /* Pods_PlayRTSP_Objc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CEA8BB261AA244D359AB618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78398CFBBB7F6EC3A4844B59 /* Pods_PlayRTSP_Objc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4716242FDDBFA6984E6F7EDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2848F3DC8EF990B2CA56F4BC /* Pods-PlayRTSP_Objc.debug.xcconfig */,
+				E5FD4F9D591EC2036E520CF0 /* Pods-PlayRTSP_Objc.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C0BD07FE246E307D0044DABD = {
 			isa = PBXGroup;
 			children = (
 				C0BD0809246E307D0044DABD /* PlayRTSP_Objc */,
 				C0BD0808246E307D0044DABD /* Products */,
+				4716242FDDBFA6984E6F7EDE /* Pods */,
+				3CEA8BB261AA244D359AB618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,17 +130,117 @@
 			children = (
 				C0BD080A246E307D0044DABD /* AppDelegate.h */,
 				C0BD080B246E307D0044DABD /* AppDelegate.m */,
-				C0BD080D246E307D0044DABD /* SceneDelegate.h */,
-				C0BD080E246E307D0044DABD /* SceneDelegate.m */,
-				C0BD0810246E307D0044DABD /* ViewController.h */,
-				C0BD0811246E307D0044DABD /* ViewController.m */,
+				C0BD082F246E34010044DABD /* Assets */,
+				C0BD0829246E30D10044DABD /* Models */,
+				C0BD0828246E30CB0044DABD /* Services */,
+				C0BD0827246E30C40044DABD /* Views */,
+				C0BD0826246E30B40044DABD /* Controllers */,
+				C0BD0825246E30A60044DABD /* Categories */,
+				C0BD0824246E309C0044DABD /* Utils */,
+				C0BD0831246E341D0044DABD /* Supporting Files */,
+			);
+			path = PlayRTSP_Objc;
+			sourceTree = "<group>";
+		};
+		C0BD0824246E309C0044DABD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD0852246E76320044DABD /* XDefer.h */,
+				C0BD0853246E76320044DABD /* XDefer.m */,
+				C086194F246F9B260018CFFC /* XHero.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C0BD0825246E30A60044DABD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD0855246E83720044DABD /* CALayer+Shadow.h */,
+				C0BD0856246E83720044DABD /* CALayer+Shadow.m */,
+				C0BD083B246E43BB0044DABD /* NSArray+HOF.h */,
+				C0BD083C246E43BB0044DABD /* NSArray+HOF.m */,
+				C0BD083E246E44CD0044DABD /* UIImage+SFSymbols.h */,
+				C0BD083F246E44CD0044DABD /* UIImage+SFSymbols.m */,
+				C0BD0841246E460D0044DABD /* UIView+Shake.h */,
+				C0BD0842246E460D0044DABD /* UIView+Shake.m */,
+				C0BD0849246E5A700044DABD /* UIView+NibLoadable.h */,
+				C0BD084A246E5A700044DABD /* UIView+NibLoadable.m */,
+				C0BD082B246E31640044DABD /* UIViewController+ContentVC.h */,
+				C0BD082C246E31640044DABD /* UIViewController+ContentVC.m */,
+				C0BD0832246E36350044DABD /* UIViewController+Theme.h */,
+				C0BD0833246E36350044DABD /* UIViewController+Theme.m */,
+				C0BBC16A246EF47700C89B5A /* UIViewController+SegueHandler.h */,
+				C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C0BD0826246E30B40044DABD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD0858246E8F1C0044DABD /* Base Controller */,
+				C0BD0835246E41C60044DABD /* RTSPListViewController.h */,
+				C0BD0836246E41C60044DABD /* RTSPListViewController.m */,
+				C0BD0838246E41E30044DABD /* RTSPViewController.h */,
+				C0BD0839246E41E30044DABD /* RTSPViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0BD0827246E30C40044DABD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD0844246E46640044DABD /* RTSPView.xib */,
+				C0BD0846246E4A5C0044DABD /* RTSPView.h */,
+				C0BD0847246E4A5C0044DABD /* RTSPView.m */,
+				C0BD084C246E61890044DABD /* RTSPViewCell.h */,
+				C0BD084D246E61890044DABD /* RTSPViewCell.m */,
+				C0BD084F246E6E6B0044DABD /* XButton.h */,
+				C0BD0850246E6E6B0044DABD /* XButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0BD0828246E30CB0044DABD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C0BD0829246E30D10044DABD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0BD082F246E34010044DABD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				C0BD0813246E307D0044DABD /* Main.storyboard */,
-				C0BD0816246E307E0044DABD /* Assets.xcassets */,
 				C0BD0818246E307E0044DABD /* LaunchScreen.storyboard */,
+				C0BD0816246E307E0044DABD /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C0BD0831246E341D0044DABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				C0BD081B246E307E0044DABD /* Info.plist */,
 				C0BD081C246E307E0044DABD /* main.m */,
 			);
-			path = PlayRTSP_Objc;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0BD0858246E8F1C0044DABD /* Base Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD0810246E307D0044DABD /* ViewController.h */,
+				C0BD0811246E307D0044DABD /* ViewController.m */,
+			);
+			name = "Base Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0BD0820246E307E0044DABD /* Build configuration list for PBXNativeTarget "PlayRTSP_Objc" */;
 			buildPhases = (
+				4A33F866A694C8F868B5778B /* [CP] Check Pods Manifest.lock */,
 				C0BD0803246E307D0044DABD /* Sources */,
 				C0BD0804246E307D0044DABD /* Frameworks */,
 				C0BD0805246E307D0044DABD /* Resources */,
+				BDFB1997EDD4648F91758E72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,6 +276,7 @@
 				TargetAttributes = {
 					C0BD0806246E307D0044DABD = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -134,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BD081A246E307E0044DABD /* LaunchScreen.storyboard in Resources */,
+				C0BD0845246E46640044DABD /* RTSPView.xib in Resources */,
 				C0BD0817246E307E0044DABD /* Assets.xcassets in Resources */,
 				C0BD0815246E307D0044DABD /* Main.storyboard in Resources */,
 			);
@@ -141,15 +312,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A33F866A694C8F868B5778B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayRTSP_Objc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDFB1997EDD4648F91758E72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayRTSP_Objc/Pods-PlayRTSP_Objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0BD0803246E307D0044DABD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BD084B246E5A700044DABD /* UIView+NibLoadable.m in Sources */,
+				C0BD083D246E43BB0044DABD /* NSArray+HOF.m in Sources */,
 				C0BD0812246E307D0044DABD /* ViewController.m in Sources */,
+				C0BD084E246E61890044DABD /* RTSPViewCell.m in Sources */,
+				C0BD0854246E76320044DABD /* XDefer.m in Sources */,
+				C0BD083A246E41E30044DABD /* RTSPViewController.m in Sources */,
+				C0BD0848246E4A5C0044DABD /* RTSPView.m in Sources */,
+				C0BBC16C246EF47700C89B5A /* UIViewController+SegueHandler.m in Sources */,
+				C0BD0851246E6E6B0044DABD /* XButton.m in Sources */,
+				C0861950246F9B260018CFFC /* XHero.swift in Sources */,
+				C0BD0843246E460D0044DABD /* UIView+Shake.m in Sources */,
+				C0BD0834246E36350044DABD /* UIViewController+Theme.m in Sources */,
 				C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */,
+				C0BD0837246E41C60044DABD /* RTSPListViewController.m in Sources */,
+				C0BD0840246E44CD0044DABD /* UIImage+SFSymbols.m in Sources */,
+				C0BD0857246E83720044DABD /* CALayer+Shadow.m in Sources */,
 				C0BD081D246E307E0044DABD /* main.m in Sources */,
-				C0BD080F246E307D0044DABD /* SceneDelegate.m in Sources */,
+				C0BD082D246E31640044DABD /* UIViewController+ContentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +514,10 @@
 		};
 		C0BD0821246E307E0044DABD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2848F3DC8EF990B2CA56F4BC /* Pods-PlayRTSP_Objc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCGTM97MB7;
 				INFOPLIST_FILE = PlayRTSP_Objc/Info.plist;
@@ -298,14 +527,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xander.PlayRTSP-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C0BD0822246E307E0044DABD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FD4F9D591EC2036E520CF0 /* Pods-PlayRTSP_Objc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCGTM97MB7;
 				INFOPLIST_FILE = PlayRTSP_Objc/Info.plist;
@@ -315,7 +549,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xander.PlayRTSP-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

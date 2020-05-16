@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  UIView+NibLoadable.h
 //  PlayRTSP_Objc
 //
 //  Created by xander on 5/15/20.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface UIView (NibLoadable)
 
-@property (strong, nonatomic) UIWindow *window;
+- (UIView*)fromNib;
 
 @end
-

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  UIView+Shake.h
 //  PlayRTSP_Objc
 //
 //  Created by xander on 5/15/20.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface UIView (Shake)
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)startShaking;
+- (void)stopShaking;
 
 @end
-

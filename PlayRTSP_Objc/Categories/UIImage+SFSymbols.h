@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImage+SFSymbols.h
 //  PlayRTSP_Objc
 //
 //  Created by xander on 5/15/20.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImage (SFSymbols)
 
+- (UIImage*)play;
+- (UIImage*)stop;
 
 @end
-

@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  UIViewController+Theme.h
 //  PlayRTSP_Objc
 //
 //  Created by xander on 5/15/20.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+@interface UIViewController (Theme)
 
-@property (strong, nonatomic) UIWindow * window;
+- (void)setAppearance;
 
 @end
-

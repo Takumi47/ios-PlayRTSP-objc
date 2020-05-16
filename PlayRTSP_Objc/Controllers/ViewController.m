@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+Theme.h"
+
+NSString * const kDefaultNavigationBarTitle = @"RTSP List";
 
 @interface ViewController ()
 
@@ -14,10 +17,15 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.title = kDefaultNavigationBarTitle;
+    [self setAppearance];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setAppearance];
+}
 
 @end
