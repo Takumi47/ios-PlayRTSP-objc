@@ -15,7 +15,7 @@
     
     void (^setupNavBar)(UINavigationController*) = ^(UINavigationController *nav) {
         nav.navigationBar.barStyle = UIBarStyleBlack;
-        nav.navigationBar.barTintColor = [UIColor colorWithRed:61.0/255.0 green:150.0/255.0 blue:225.0/255.0 alpha:1.0];
+        nav.navigationBar.barTintColor = [UIColor colorWithRed:35.0/255.0 green:166.0/255.0 blue:229.0/255.0 alpha:1.0];
         nav.navigationBar.tintColor = UIColor.whiteColor;
         [nav.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
         [nav.navigationBar setTitleTextAttributes:@{
