@@ -20,9 +20,8 @@ static const uint64_t kSchemaVersion = 1;
 
 @implementation RealmProvider
 
-static RealmProvider *_rtsp = nil;
-
 + (RealmProvider*)rtsp {
+    static RealmProvider *_rtsp = nil;
     if (_rtsp == nil) {
         RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
         config.fileURL = [Path inLibraryWithName:@"rtsp.realm"];
