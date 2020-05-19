@@ -12,25 +12,14 @@
 
 #pragma mark - Singleton
 
-+ (instancetype) sharedInstance
-{
++ (instancetype) sharedInstance {
     static IJKMediaService *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[IJKMediaService alloc]init];
+        instance.ijkMediaItems = [NSMutableDictionary new];
     });
     return instance;
-}
-
-#pragma mark - Lifecycle
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _ijkMediaItems = [NSMutableDictionary new];
-    }
-    return self;
 }
 
 #pragma mark - Methods

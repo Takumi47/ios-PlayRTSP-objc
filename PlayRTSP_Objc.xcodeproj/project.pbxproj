@@ -28,6 +28,8 @@
 		C0861A08247011D80018CFFC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0861A07247011D80018CFFC /* AudioToolbox.framework */; };
 		C0861A0B247012430018CFFC /* IJKMediaService.m in Sources */ = {isa = PBXBuildFile; fileRef = C0861A0A247012430018CFFC /* IJKMediaService.m */; };
 		C0861A0E247013DE0018CFFC /* IJKMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C0861A0D247013DE0018CFFC /* IJKMediaItem.m */; };
+		C0AB904E2473CF5600A74C1C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619EF2470113E0018CFFC /* IJKMediaFramework.framework */; };
+		C0AB90512473D87600A74C1C /* UICollectionViewCell+Bouncible.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AB90502473D87600A74C1C /* UICollectionViewCell+Bouncible.m */; };
 		C0BBC16C246EF47700C89B5A /* UIViewController+SegueHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */; };
 		C0BD080C246E307D0044DABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD080B246E307D0044DABD /* AppDelegate.m */; };
 		C0BD0812246E307D0044DABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BD0811246E307D0044DABD /* ViewController.m */; };
@@ -96,6 +98,8 @@
 		C0861A0A247012430018CFFC /* IJKMediaService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKMediaService.m; sourceTree = "<group>"; };
 		C0861A0C247013DE0018CFFC /* IJKMediaItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKMediaItem.h; sourceTree = "<group>"; };
 		C0861A0D247013DE0018CFFC /* IJKMediaItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IJKMediaItem.m; sourceTree = "<group>"; };
+		C0AB904F2473D87600A74C1C /* UICollectionViewCell+Bouncible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Bouncible.h"; sourceTree = "<group>"; };
+		C0AB90502473D87600A74C1C /* UICollectionViewCell+Bouncible.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Bouncible.m"; sourceTree = "<group>"; };
 		C0BBC16A246EF47700C89B5A /* UIViewController+SegueHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueHandler.h"; sourceTree = "<group>"; };
 		C0BBC16B246EF47700C89B5A /* UIViewController+SegueHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueHandler.m"; sourceTree = "<group>"; };
 		C0BD0807246E307D0044DABD /* PlayRTSP_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayRTSP_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0AB904E2473CF5600A74C1C /* IJKMediaFramework.framework in Frameworks */,
 				C08619FA247011780018CFFC /* OpenGLES.framework in Frameworks */,
 				C08619F8247011710018CFFC /* QuartzCore.framework in Frameworks */,
 				C0861A06247011D10018CFFC /* AVFoundation.framework in Frameworks */,
@@ -267,6 +272,8 @@
 				C0BD083C246E43BB0044DABD /* NSArray+HOF.m */,
 				C08619EC246FFDD20018CFFC /* UICollectionView+ApplyChanges.h */,
 				C08619ED246FFDD20018CFFC /* UICollectionView+ApplyChanges.m */,
+				C0AB904F2473D87600A74C1C /* UICollectionViewCell+Bouncible.h */,
+				C0AB90502473D87600A74C1C /* UICollectionViewCell+Bouncible.m */,
 				C0BD083E246E44CD0044DABD /* UIImage+SFSymbols.h */,
 				C0BD083F246E44CD0044DABD /* UIImage+SFSymbols.m */,
 				C0BD0841246E460D0044DABD /* UIView+Shake.h */,
@@ -498,6 +505,7 @@
 				C0BD0857246E83720044DABD /* CALayer+Shadow.m in Sources */,
 				C0BD081D246E307E0044DABD /* main.m in Sources */,
 				C08619EE246FFDD20018CFFC /* UICollectionView+ApplyChanges.m in Sources */,
+				C0AB90512473D87600A74C1C /* UICollectionViewCell+Bouncible.m in Sources */,
 				C0BD082D246E31640044DABD /* UIViewController+ContentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
